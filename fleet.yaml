@@ -5,7 +5,7 @@
 
 namespace: fleet-local
 helm:
-  chart: https://gitlab.wifi.com/lihw/helm-charts/raw/master/common-0.1.0.tgz
+  chart: https://github.com/usst830514/helm-charts/raw/master/common-0.1.0.tgz
   values:
     image.repository: harbor-wf.zenmen.corp/tekton/devops-go-sample:b157c93
 kustomize:
