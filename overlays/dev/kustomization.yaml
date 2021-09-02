@@ -1,2 +1,2 @@
 patches:
-#- deployment.yaml
+- deployment.yaml
