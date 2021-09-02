@@ -9,7 +9,8 @@ helm:
   values:
     nameOverride: devops-go-sample-master
     replicaCount: 1
-    image.repository: harbor-wf.zenmen.corp/tekton/devops-go-sample
-    image.tag: b157c93
+    image:
+      repository: harbor-wf.zenmen.corp/tekton/devops-go-sample
+      tag: b157c93
 kustomize:
   dir: overlays/dev
