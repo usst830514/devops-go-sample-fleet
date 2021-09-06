@@ -12,5 +12,10 @@ helm:
     image:
       repository: harbor-wf.zenmen.corp/tekton/devops-go-sample
       tag: b157c93
-kustomize:
-  dir: overlays/dev
+targetCustomizations:
+  - name: dev
+    clusterSelector:
+      matchLabels:
+        env: dev
+    kustomize:
+      dir: overlays/dev
